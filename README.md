@@ -13,8 +13,11 @@ the following steps to run the Docker Swarm virtual machines cluster:
 git clone https://github.com/tdi/vagrant-docker-swarm.git
 
 ### Add a fix to resolve DNS
-ATTENTION: Add the v.customize ["modifyvm", :id, "--natdnshostresolver1", "on"] in the Vagrantfike
-to allow the virtual machines to resolve DNS
+ATTENTION: Add the 
+
+v.customize ["modifyvm", :id, "--natdnshostresolver1", "on"] 
+
+in the Vagrantfile to allow the virtual machines to resolve DNS
 
 ```ruby
 config.vm.provider "virtualbox" do |v|
