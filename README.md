@@ -25,7 +25,9 @@ end
 ```
 
 ### Install the vagrant-proxyconf plugin
+```bash
 vagrant plugin install vagrant-proxyconf
+```
 
 ### Build the cluster
 ```bash
@@ -42,7 +44,7 @@ docker swarm init --advertise-addr 192.168.10.2
 exit
 ```
 
-### Add the first worker node to the cluster:
+### Add the first worker node
 Run the following commands:
 ```bash
 vagrant ssh worker1
@@ -52,7 +54,7 @@ docker swarm join \
 exit
 ```
 
-### Add the second worker node to the cluster:
+### Add the second worker node
 Run the following commands:
 ```bash
 vagrant ssh worker1
@@ -63,8 +65,10 @@ exit
 ```
 
 ### Check it out the Docker Swarm status
+```bash
 vagran ssh manager
 docker node ls
+```
 
 ### Create the docker-compose.yml file to deploy the Docker Swarm stack
 Download the docker-compose.yml provided by https://github.com/brunorossi/docker-flask-simple-app repository
