@@ -4,7 +4,7 @@
 The code is available on Github repository: https://github.com/brunorossi/docker-flask-simple-app
 
 ## Docker Image
-The docker image is available on docker hub via automated build: https://hub.docker.com/r/brossi/docker-flask-simple-app/
+The docker image is available on docker hub via automated build: https://hub.docker.com/r/brossi/docker-flask-simple-app
 
 ## Docker Swarm provided by Vagrant
 The Docker Image is deployable on a local machine via a Vagrant provided Docker Swarm Cluster
