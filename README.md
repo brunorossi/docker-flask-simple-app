@@ -6,7 +6,7 @@ The code is available on Github repository: https://github.com/brunorossi/docker
 ## Docker Image
 The docker image is available on docker hub via automated build: https://hub.docker.com/r/brossi/docker-flask-simple-app/
 
-## Docker Swarm provided via Vagrant
+## Docker Swarm provided by Vagrant
 The Docker Image is deployable on a local machine via a Vagrant provided Docker Swarm Cluster
 With Vagrant, Virtual Box and Git installed on you local Linux client you need to accomplish
 the following steps to run the Docker Swarm virtual machines cluster:
