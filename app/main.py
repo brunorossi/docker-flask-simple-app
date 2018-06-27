@@ -8,7 +8,7 @@ from flask import Flask
 from flask import jsonify
 
 app = Flask(__name__)
-app.redis = redis.StrictRedis(host=os.getenv('REDIS_HOST', 'localhost'), socket_timeout=5)
+app.redis = redis.StrictRedis(host=os.getenv('REDIS_HOST', 'localhost'), socket_timeout=5, decode_responses=True)
 
 @app.route('/set', methods=['POST'])
 def set_value():

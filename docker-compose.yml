@@ -1,4 +1,18 @@
-version: '2'
+version: '3'
 services:
-  web:
-    build: ./
+  flask-app:
+    image: brossi/docker-flask-simple-app:latest
+    deploy:
+      replicas: 2
+    ports:
+      - "80:80"
+    depends_on:
+      - redis
+    environment:
+      ENV: production
+      REDIS_HOST: redis
+  redis:
+    image: redis:alpine
+    deploy:
+      replicas: 1
+
